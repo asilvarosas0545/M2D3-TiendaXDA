@@ -1,0 +1,15 @@
+.btn{
+  background-color: $colors-white;
+  color: $colors-granitegray;
+  border: 1px $colors-granitegray;
+  &:hover{
+    border: 1px $colors-isabelline;
+  }
+  &:focus{
+    border: 1px $colors-isabelline;
+    color: $colors-isabelline;
+  }
+  &-sm{
+    width: 75%;
+  }
+}

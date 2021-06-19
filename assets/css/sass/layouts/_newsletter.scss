@@ -1,0 +1,8 @@
+//layout - newsletter
+.newsletter{
+  background-color: $colors-granitegray;
+  color: $colors-white;
+  &__suscribe{
+    @include rotate-up;
+  }
+}

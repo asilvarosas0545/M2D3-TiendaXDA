@@ -1,0 +1,18 @@
+// layout header
+.header{
+  /*
+  background-image: url('../img/imagen1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  */
+  &__img{
+    @include laptop-view {
+      float: right;
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,26 @@
+//layout navigation
+.navbar{
+  padding: 0 !important;
+  height: 5rem;
+  &__img-small{
+    width: 5em;
+  }
+  &-brand{
+    padding: 1.5rem;
+    background-color: $colors-smokyblack;
+  }
+  &-brand h5{
+    color: $colors-white;
+    text-transform: uppercase;
+    @include rotate-up;
+  }
+}
+.nav-link{
+  color: $colors-smokyblack;
+  &.nav-link.active{
+    color: $colors-granitegray !important;
+    &:hover{
+      color:$colors-quicksilver !important;
+    }
+  }
+}
