@@ -1,4 +1,18 @@
 //Layouts - Tienda
 .tienda{
   display: block;
+  padding: 10%;
+  @include laptop-view {
+    padding: 15%;
+  }
+  & h1{
+    text-transform: uppercase;
+  }
+  & p{
+    color: $colors-granitegray;
+    font-size: $font-size-medium;
+    @include laptop-view {
+      font-size: $font-size-large;
+    }
+  }
 }

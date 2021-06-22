@@ -1,7 +1,6 @@
 //layout navigation
 .navbar{
-  padding: 0 !important;
-  height: 5rem;
+  padding: 0;
   &__img-small{
     width: 5em;
   }
@@ -14,9 +13,14 @@
     text-transform: uppercase;
     @include rotate-up;
   }
+  &-toggler-icon{
+    color: $colors-smokyblack;
+  }
 }
 .nav-link{
-  color: $colors-smokyblack;
+  font-size: $font-size-large;
+  font-weight: bolder !important;
+  color: $colors-smokyblack !important;
   &.nav-link.active{
     color: $colors-granitegray !important;
     &:hover{

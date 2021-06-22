@@ -1,16 +1,35 @@
 // layout header
 .header{
-  /*
-  background-image: url('../img/imagen1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  */
   &__img{
-    @include laptop-view {
-      float: right;
+    height: 15rem;
+    background-image: url('../img/imagen1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &--mobile{
+      height: 15rem;
+      display: block;
+      @include phone-view {
+        height: 25rem;
+      }
+      @include tablet-view {
+        height: 35rem;
+      }
+      @include laptop-view {
+        height: auto;
+        display: none;
+      }
+    }
+    &--laptop{
+      height: auto;
+      display: none;
+      @include laptop-view {
+        display: block;
+      }
     }
   }
+
 }
 
 

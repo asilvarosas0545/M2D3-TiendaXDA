@@ -1,12 +1,15 @@
 .btn{
   background-color: $colors-white;
   color: $colors-granitegray;
-  border: 1px $colors-granitegray;
+  font-width: bold;
+  border: 1px solid $colors-granitegray;
+  border-radius: 0;
+  padding: 10px 20px;
   &:hover{
-    border: 1px $colors-isabelline;
+    border: 1px solid $colors-isabelline;
   }
   &:focus{
-    border: 1px $colors-isabelline;
+    border: 1px solid $colors-isabelline;
     color: $colors-isabelline;
   }
   &-sm{
